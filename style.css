@@ -148,19 +148,18 @@ body {
 }
 
 /* ==========================================
-   Hero Section
+   Hero Section (No Photo - Clean Centered Layout)
    ========================================== */
 .hero-section {
-    padding: 5rem 0;
+    padding: 6rem 0;
     background-color: var(--bg-surface);
     border-bottom: 1px solid var(--border-color);
+    text-align: center;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 3rem;
-    align-items: center;
+.hero-content-center {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .badge {
@@ -174,7 +173,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.hero-text h1 {
+.hero-section h1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 3.5rem;
     font-weight: 700;
@@ -191,25 +190,16 @@ body {
 }
 
 .hero-desc {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: var(--text-muted);
     margin-bottom: 2rem;
-    max-width: 600px;
+    line-height: 1.6;
 }
 
 .hero-actions {
     display: flex;
+    justify-content: center;
     gap: 1rem;
-}
-
-.hero-photo-box img {
-    width: 100%;
-    max-width: 280px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 /* ==========================================
@@ -388,9 +378,6 @@ h2 {
    Responsive Media Queries
    ========================================== */
 @media (max-width: 768px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-    }
     .nav-links {
         display: none;
     }
